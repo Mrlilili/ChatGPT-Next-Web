@@ -13,7 +13,6 @@
     ![Create Database](./images/upstash-2.png)
 
     ![Select Server](./images/upstash-3.png)
-
 3. Find the REST API and copy UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN (⚠Important⚠: Do not share your token!)
 
    ![Copy](./images/upstash-4.png)
@@ -28,4 +27,5 @@
 
 5. Success!
 
+   ![Great job~!](./images/upstash-7.png)
    ![Great job~!](./images/upstash-7.png)
