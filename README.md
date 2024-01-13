@@ -119,9 +119,9 @@ If you have deployed your own project with just one click following the steps ab
 
 We recommend that you follow the steps below to re-deploy:
 
-- Delete the original repository;
-- Use the fork button in the upper right corner of the page to fork this project;
-- Choose and deploy in Vercel again, [please see the detailed tutorial](./docs/vercel-cn.md).
+- Deleting the original repository;
+- Use the fork button in the upper right corner of the page to fork this project again;
+- After forking the project, you can choose and deploy in Vercel again. For detailed instructions, please refer to the [documentation](./docs/vercel-cn.md).
 
 ### Enable Automatic Updates
 
@@ -135,7 +135,7 @@ After forking the project, due to the limitations imposed by GitHub, you need to
 
 ### Manually Updating Code
 
-If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
+If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with the upstream code. You can refer to the detailed steps on how to do this in the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 
 You can star or watch this project or follow author to get release notifications in time.
 
