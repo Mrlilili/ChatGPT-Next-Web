@@ -111,7 +111,13 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
 
 [English > FAQ](./docs/faq-en.md)
 
-## Keep Updated
+## Troubleshooting and Deployment
+
+In case of GitHub Actions failure or common deployment issues, follow these steps:
+1. Analyze the error logs to identify specific issues causing the failure.
+2. Check the environment variables and configurations for common deployment issues and error handling.
+3. Ensure the required dependencies and services are correctly set up.
+4. Analyze any error messages or logs generated during the deployment process to uncover potential issues.
 
 > [简体中文 > 如何保持代码更新](./README_CN.md#保持更新)
 
