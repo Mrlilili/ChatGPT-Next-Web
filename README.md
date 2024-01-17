@@ -105,7 +105,26 @@ One-Click to get well-designed cross-platform ChatGPT web UI.
    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web), remember that `CODE` is your page password;
 3. Enjoy :)
 
-## FAQ
+## Troubleshooting GitHub Actions Deployment Issues
+
+If you encounter issues with GitHub Actions deployment, follow the steps below to troubleshoot and resolve the problem. Additionally, we have provided guidance on properly setting the required environment variables for the deployment process.
+
+[简体中文 > 常见问题](./docs/faq-cn.md)
+
+[English > FAQ](./docs/faq-en.md)
+
+### Troubleshooting Steps
+
+- **Step 1:** Check for Common Error Messages
+  Look for common error messages in the GitHub Actions logs. This will help pinpoint the source of the issue.
+- **Step 2:** Double-Check Environment Variables
+  Ensure that the required environment variables, such as `OPENAI_API_KEY` and `CODE`, are properly set for deployment. Incorrect or missing environment variables can lead to deployment issues. Refer to the [Environment Variables](#K) section for more information.
+- **Step 3:** Review Deployment Logs
+  Review the deployment logs to identify any specific errors or warnings that might provide insights into the root cause of the problem.
+- **Step 4:** Seek Community Support
+  If the issue persists, reach out to the community for assistance. You can post your problem on the project's GitHub Discussions or seek help from the maintainers or contributors.
+- **Step 5:** Follow Best Practices
+  Ensure that you are following best practices for configuring GitHub Actions workflows, including proper use of secrets and environment variables.
 
 [简体中文 > 常见问题](./docs/faq-cn.md)
 
