@@ -14,7 +14,7 @@
 
     ![Select Server](./images/upstash-3.png)
 
-3. Find the REST API and copy YOUR_UPSTASH_REDIS_REST_URL and YOUR_UPSTASH_REDIS_REST_TOKEN (⚠Important⚠: Do not share your token!)
+3. Find the REST API and copy YOUR_UPSTASH_REDIS_REST_URL and YOUR_UPSTASH_REDIS_REST_TOKEN (⚠Important⚠: Do not share your token!) (⚠Important⚠: Do not share your token!)
 
    ![Copy](./images/upstash-4.png)
 
