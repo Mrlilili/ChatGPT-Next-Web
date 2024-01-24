@@ -14,11 +14,11 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 8. Do not use the default "Build command" due to a node:buffer bug. Instead, use the following command:
    ```
    npx @cloudflare/next-on-pages --experimental-minify
-   ```
+   ```, Fill in the following information:
    ```
 9. For "Build output directory", use the default value and do not modify it.
 10. Do not modify "Root Directory".
-11. For "Environment variables", click ">" and then "Add variable". Fill in the following information:
+11. For "Environment variables", click ">", ``` and then "Add variable". Fill in the following information:
 
     - `NODE_VERSION=20.1`
     - `NEXT_TELEMETRY_DISABLE=1`
