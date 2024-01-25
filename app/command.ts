@@ -15,6 +15,7 @@ export function useCommand(commands: Commands = {}) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
+    try {
     let shouldUpdate = false;
     searchParams.forEach((param, name) => {
       const commandName = name as keyof Commands;
@@ -28,6 +29,10 @@ export function useCommand(commands: Commands = {}) {
     if (shouldUpdate) {
       setSearchParams(searchParams);
     }
+    } catch (error) {
+        // Add error handling and logging here
+    }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams, commands]);
 }

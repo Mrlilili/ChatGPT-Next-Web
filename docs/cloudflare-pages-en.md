@@ -13,14 +13,14 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 7. In "Build Settings", choose the "Framework presets" option and select "Next.js".
 8. Do not use the default "Build command" due to a node:buffer bug. Instead, use the following command:
    ```
-   npx @cloudflare/next-on-pages --experimental-minify
+   npx next-on-pages --experimental-minify
    ```
 9. For "Build output directory", use the default value and do not modify it.
 10. Do not modify "Root Directory".
 11. For "Environment variables", click ">" and then "Add variable". Fill in the following information:
 
     - `NODE_VERSION=20.1`
-    - `NEXT_TELEMETRY_DISABLE=1`
+    - `NEXT_TELEMETRY_DISABLE=0`
     - `OPENAI_API_KEY=your_own_API_key`
     - `YARN_VERSION=1.22.19`
     - `PHP_VERSION=7.4`
