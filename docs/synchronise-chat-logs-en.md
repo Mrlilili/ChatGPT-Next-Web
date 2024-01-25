@@ -1,4 +1,4 @@
-# Synchronize Chat Logs with UpStash
+# Synchronize Chat Logs with Upstash
 ## Prerequisites
 - GitHub account
 - Your own ChatGPT-Next-Web server set up
