@@ -1,7 +1,7 @@
 import tauriConfig from "../../src-tauri/tauri.conf.json";
 
 export const getBuildConfig = () => {
-  if (typeof process === "undefined") {
+  if (!process?.env.BUILD_MODE || !process?.env.BUILD_APP) {
     throw Error(
       "[Server Config] you are importing a nodejs-only module outside of nodejs",
     );
