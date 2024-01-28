@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import Locale from "./locales";
 
-type Command = (param: string) => void;
+type Command = (param: string) => any; // Changed return type to any
 interface Commands {
   fill?: Command;
   submit?: Command;
@@ -67,7 +67,7 @@ export function useChatCommand(commands: ChatCommands = {}) {
 
     return {
       matched,
-      invoke: () => matched && commands[command]!(userInput),
+      invoke: () => matched ? commands[command]!(userInput) : undefined, // Fixed potential null access
     };
   }
 
