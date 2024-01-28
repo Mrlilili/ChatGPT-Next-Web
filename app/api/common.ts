@@ -4,7 +4,7 @@ import { DEFAULT_MODELS, OPENAI_BASE_URL } from "../constant";
 import { collectModelTable } from "../utils/model";
 import { makeAzurePath } from "../azure";
 
-const serverConfig = getServerSideConfig();
+const serverConfig = getServerSideConfig() || {};
 
 export async function requestOpenai(req: NextRequest) {
   const controller = new AbortController();
@@ -75,7 +75,7 @@ export async function requestOpenai(req: NextRequest) {
         DEFAULT_MODELS,
         serverConfig.customModels,
       );
-      const clonedBody = await req.text();
+      const clonedBody = req.clone().text();
       fetchOptions.body = clonedBody;
 
       const jsonBody = JSON.parse(clonedBody) as { model?: string };
