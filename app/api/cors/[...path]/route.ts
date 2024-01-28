@@ -18,7 +18,7 @@ async function handle(
 
   const fetchOptions: RequestInit = {
     headers: {
-      authorization: req.headers.get("authorization") ?? "",
+      Authorization: req.headers.get("authorization") ?? "",
     },
     body: shouldNotHaveBody ? null : req.body,
     method,
