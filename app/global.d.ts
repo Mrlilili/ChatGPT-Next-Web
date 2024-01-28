@@ -10,7 +10,7 @@ declare module "*.scss" {
 
 declare module "*.svg";
 
-declare interface Window {
+declare interface Window extends Record<string, any> {
   __TAURI__?: {
     writeText(text: string): Promise<void>;
     invoke(command: string, payload?: Record<string, unknown>): Promise<any>;

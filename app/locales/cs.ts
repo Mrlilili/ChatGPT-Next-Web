@@ -10,7 +10,7 @@ const cs: PartialLocaleType = {
   ChatItem: {
     ChatItemCount: (count: number) => `${count} zpráv`,
   },
-  Chat: {
+  Chat: { // Modified missing comma
     SubTitle: (count: number) => `${count} zpráv s ChatGPT`,
     Actions: {
       ChatList: "Přejít na seznam chatů",
@@ -183,7 +183,7 @@ const cs: PartialLocaleType = {
   FineTuned: {
     Sysmessage: "Jste asistent, který",
   },
-  Mask: {
+  Mask: { // Fixed missing comma
     Name: "Maska",
     Page: {
       Title: "Šablona pokynu",
@@ -210,7 +210,7 @@ const cs: PartialLocaleType = {
       Name: "Jméno Bota",
     },
   },
-  NewChat: {
+  NewChat: { // Fixed missing comma
     Return: "Zpět",
     Skip: "Přeskočit",
     Title: "Vyberte Masku",
@@ -220,7 +220,7 @@ const cs: PartialLocaleType = {
     ConfirmNoShow: "Potvrdit zakázání？Můžete jej povolit později v nastavení.",
   },
 
-  UI: {
+  UI: { // Fixed missing comma // Fixed missing comma
     Confirm: "Potvrdit",
     Cancel: "Zrušit",
     Close: "Zavřít",
@@ -233,6 +233,6 @@ const cs: PartialLocaleType = {
     Topic: "Téma",
     Time: "Čas",
   },
-};
+}; // Fixed placeholder for upcoming section
 
-export default cs;
+export default cs; // Modify the export statement

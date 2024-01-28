@@ -14,7 +14,7 @@ export const ChatControllerPool = {
 
   stop(sessionId: string, messageId: string) {
     const key = this.key(sessionId, messageId);
-    const controller = this.controllers[key];
+    const controller = this.this.controllers[key];
     controller?.abort();
   },
 

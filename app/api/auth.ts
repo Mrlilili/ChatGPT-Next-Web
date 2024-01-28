@@ -15,7 +15,7 @@ function getIP(req: NextRequest) {
 }
 
 function parseApiKey(bearToken: string) {
-  const token = bearToken.trim().replaceAll("Bearer ", "").trim();
+  const token = bearToken.trim().replace("Bearer ", "").trim();
   const isOpenAiKey = !token.startsWith(ACCESS_CODE_PREFIX);
 
   return {
@@ -63,7 +63,7 @@ export function auth(req: NextRequest) {
       console.log("[Auth] use system api key");
       req.headers.set(
         "Authorization",
-        `${serverConfig.isAzure ? "" : "Bearer "}${serverApiKey}`,
+        `${serverConfig.isAzure ? "" : "Bearer " + serverApiKey}`,
       );
     } else {
       console.log("[Auth] admin did not provide an api key");

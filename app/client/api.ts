@@ -117,7 +117,7 @@ export class ClientApi {
 
     const resJson = await res.json();
     console.log("[Share]", resJson);
-    if (resJson.id) {
+    if (resJson && resJson.id) { // Fixed potential null access
       return `https://shareg.pt/${resJson.id}`;
     }
   }

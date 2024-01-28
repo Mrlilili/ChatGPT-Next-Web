@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import { getClientConfig } from "./config/client";
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="config" content={JSON.stringify(getClientConfig())} />
+        <meta name="config" content={JSON.stringify(getClientConfig() || {})} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
