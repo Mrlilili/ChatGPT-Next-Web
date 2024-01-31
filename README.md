@@ -189,6 +189,16 @@ Azure Api Key.
 
 Azure Api Version, find it at [Azure Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions).
 
+## Troubleshooting GitHub Actions Failures
+
+If you encounter issues with GitHub Actions, you can follow these troubleshooting steps to diagnose and fix common problems.
+
+1. **Check the Workflow File**: Ensure that the GitHub Actions workflow file (.yml) is correctly configured. Review the syntax, triggers, and job configurations in the file.
+2. **Review Dependencies**: Examine the dependencies used in the workflow, including versions and compatibility with the current environment.
+3. **Verify Environment Variables**: Make sure that all required environment variables are properly set in the GitHub repository secrets or workflow environment.
+
+For more detailed debugging and issue resolution, refer to the official GitHub Actions documentation.
+
 ### `HIDE_USER_API_KEY` (optional)
 
 > Default: Empty
