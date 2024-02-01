@@ -1,4 +1,4 @@
-import { BuiltinMask } from "./typing";
+import { BuiltinMask } from "../store/typing";
 
 export const EN_MASKS: BuiltinMask[] = [
   {
